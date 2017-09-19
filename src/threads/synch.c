@@ -353,10 +353,10 @@ sema_priority_less (struct list_elem *sema_1,
   int sema_1_pr;
   int sema_2_pr;
 
-  sema_1_pr = list_entry (sema_1, struct semaphore_elem, elem)->sema;
-  sema_2_pr = list_entry (sema_2, struct semaphore_elem, elem)->sema;
+  sema_1_pr = list_entry (sema_1, struct semaphore_elem, elem)->sema_priority;
+  sema_2_pr = list_entry (sema_2, struct semaphore_elem, elem)->sema_priority;
 
-  if(sema_1_pr > semae_2_pr)
+  if(sema_1_pr > sema_2_pr)
     return true;
   else
     return false;
