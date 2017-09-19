@@ -42,7 +42,7 @@ void cond_signal (struct condition *, struct lock *);
 void cond_broadcast (struct condition *, struct lock *);
 
 /* list_less_func for semaphore_elems */
-bool sema_priority_less (struct lsit_elem *, struct list_elem *, void *);
+bool sema_priority_less (struct list_elem *, struct list_elem *, void *);
 
 /* Optimization barrier.
 
