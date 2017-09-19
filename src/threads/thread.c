@@ -626,8 +626,8 @@ thread_priority_less (struct list_elem *thread_1,
   int thread_1_pr;
   int thread_2_pr;
 
-  thread_1_pr = thread_get_prirority_from_pointer(list_entry(thread_1, struct thread, elem));
-  thread_2_pr = thread_get_prirority_from_pointer(list_entry(thread_2, struct thread, elem));
+  thread_1_pr = thread_get_priority_from_pointer(list_entry(thread_1, struct thread, elem));
+  thread_2_pr = thread_get_priority_from_pointer(list_entry(thread_2, struct thread, elem));
 
   if (thread_1_pr>thread_2_pr)
     return true;
